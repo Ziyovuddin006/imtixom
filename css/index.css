@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ ;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    width: 1360;
+    padding: 0 70px;
+    margin: 0 auto;
+}
+:root{
+    --main-gray: #f5f5f5;
+    --main-black: #000000;
+    --min-white: #ffffff;
+}
+
+
+
+
+/*header uchun stillar*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.navigation-ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.lets{
+    border: 1px solid var(--main-black);
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.lets:hover{
+    background-color: var(--main-black);
+    color: var(--min-white);
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+.navigation ul li{
+    position: relative;
+}
+.navigation ul li::after{
+     content: "";
+     position: absolute;
+     bottom: -20px;
+     left: 0;
+     height: 3px;
+     width: 0;
+     display: inline-block;
+     background-color:var(--main-black);
+     transition: all 0.5s;
+}
+.navigation-ul li:hover::after{
+    width: 100%;
+}
+/*header uchun stillar*/
+
+/*hero uchun stillar*/
+.for-hero{
+    display: flex;
+}
+.for-hero h2{
+    width: 386px;
+    height: 240px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    margin-top: 150px;
+}
+.hero{
+    display: flex;
+    
+}
+.hero img{
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.lampa{
+    margin-top: 100px;
+}
+.hero-desc{
+    height: 108px;
+    width: 550px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: -350px;
+}
+.hero-btn{
+    background-color: var(--main-black);
+    color: var(--min-white);
+    border-radius: 8px;
+    transition: all 0.5s;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    width: 300px;
+    height: 100px;
+    margin-top: 90px;
+}
+.hero-btn:hover{
+    background-color: var(--min-white);
+    border: 2px solid var(--main-black);
+    color: var(--main-black);
+}
+
+/*hero uchun stillar*/
+.four-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+/*skills qismi uchun stillar*/
+
+.main{
+  font-weight: 600;
+font-size: 48px;
+line-height: 80px;
+color: var(--main-black);
+text-align: center;
+margin: 160px auto;
+}
+.card-box1{
+  background-color: var(--main-gray);
+  width: 400px;
+  height: 950px;
+  border-radius: 10px;
+  margin-top: 100px;
+
+}
+.card-box1 p{
+  margin-top: 40px;
+  padding: 20px 20px 0 20px;
+}
+.card-box1 h4{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+.card-box1 a{
+  box-sizing: var(--main-black);
+  background-color: var(--main-black);
+    color: var(--min-white);
+    border-radius: 2px;
+    transition: all 0.5s;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.card-box1 a:hover{
+  background-color: var(--main-gray);
+  border: 2px solid var(--main-black);
+  color: var(--main-black);
+}
+        
+ /* ikkinchi box */
+
+ .card-box2{
+height: 600px;
+  width: 434px;
+left: 580px;
+top: 1116px;
+border-radius: 10px;
+background-color: var(--main-gray);
+margin-top: -210px;
+ }
+ .card-box2 img{
+   margin-left: 90px;
+ } 
+.card-box2 h4{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.card-box2 p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.card-box2 a{
+  box-sizing: var(--main-black);
+  background-color: var(--main-black);
+    color: var(--min-white);
+    border-radius: 2px;
+    transition: all 0.5s;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.card-box2 a:hover{
+  background-color: var(--main-gray);
+  border: 2px solid var(--main-black);
+  color: var(--main-black);
+}
+/* ucinci box uchun */
+
+
+.card-box3{
+  height: 600px;
+  width: 434px;
+left: 580px;
+top: 1116px;
+border-radius: 10px;
+background-color: var(--main-gray);
+margin-top: -210px;
+}
+.card-box3 h4{
+ font-weight: 600;
+ font-size: 30px;
+ line-height: 80px;
+ margin-top: 10px;
+ margin-left: 20px;
+}
+.card-box3 p{
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 24px;
+ margin-top: 30px;
+ margin-left: 20px;
+}
+.card-box3 a{
+ box-sizing: var(--main-black);
+ background-color: var(--main-black);
+   color: var(--min-white);
+   border-radius: 2px;
+   transition: all 0.5s;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 27px;
+   margin-top: 50px;
+   margin-left: 20px;
+   width: 200px;
+   display: inline-block;
+   text-align: center;
+   padding: 15px 20px;
+   border-radius: 5px;
+}
+.card-box3 a:hover{
+ background-color: var(--main-gray);
+ border: 2px solid var(--main-black);
+ color: var(--main-black);
+}
+/*tortinchi box uchun*/
+
+.card-box4{
+  height: 300px;
+width: 900px;
+display: flex;
+background-color: var(--main-gray);
+margin-left: 500px;
+margin-top: -300px;
+gap: 50px;
+border-radius: 10px;
+}
+.card-box4 h4{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  margin-top: 40px;
+  margin-left: 20px;
+ }
+ .card-box4 p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-left: 20px;
+ }
+ .card-box4 a{
+  box-sizing: var(--main-black);
+  background-color: var(--main-black);
+    color: var(--min-white);
+    border-radius: 2px;
+    transition: all 0.5s;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+ }
+ .card-box4 a:hover{
+  background-color: var(--main-gray);
+  border: 2px solid var(--main-black);
+  color: var(--main-black);
+ }
+/*skills qismi uchun stillar*/
+.mbetween {
+  display: flex;
+  gap: 194px;
+}
+.mp1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+  margin-top: 282px;
+  margin-bottom: 23px;
+}
+.mp2 {
+  width: 635px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 40px;
+  color: #8f95a5;
+}
+.mli1 {
+  width: 93px;
+  height: 80px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #2a3246;
+}
+.mli2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #8f95a5;
+}
+.mli3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #2a3246;
+}
+.mli4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+
+  color: #2a3246;
+}
+.mli-between {
+  display: flex;
+  gap: 165px;
+}
+.mli-rasm {
+  margin-top: 250px;
+}
+.ms1 {
+  width: 372px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  margin-top: 40px;
+  color: #263238;
+  margin-bottom: 19px;
+}
+.ms2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  width: 390px;
+  color: #8f95a5;
+  margin-bottom: 29px;
+}
+.ms3 {
+  width: 90px;
+  height: 45px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+
+  color: #263238;
+}
+.ms4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #546269;
+}
+.ms {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.ms-between {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+.ms-rasm {
+  margin-bottom: 30px;
+}
+.tepa-kotarish {
+  margin-bottom: 25px;
+}
+.foter-img {
+  margin-top: 272px;
+  margin-bottom: 133px;
+}
+.foter-bolish {
+  display: flex;
+  gap: 111px;
+}
+.fp1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+  margin-top: 301px;
+  margin-bottom: 37px;
+}
+.fp2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 52px;
+  color: #8f95a5;
+}
+.fbox {
+  border-bottom: 2px solid black;
+  width: 1320px;
+  height: 2px;
+}
+/* header uchun */
+.headr-between-li {
+  position: relative;
+}
+.headr-between-li::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  display: inline-block;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: blue;
+  transition: all 0.5s;
+}
+.headr-between-li:hover::after {
+  width: 50%;
+}
+.headr-border:hover {
+  border-radius: 5px;
+  border: 2px solid #263238;
+  background-color: #263238;
+}
+.border:hover {
+  background-color: #d4c6c6;
+}
+.knopka:hover {
+  background-color: #d4c6c6;
+}
+.kolo {
+  border-radius: 10px; 
+
+}
+.user{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.user-input{
+  width: 420px;
+  padding: 26px 120px 26px 33px;
+  border-radius: 10px;
+}
+.user-input::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.btn100{
+  background-color: #263238;
+  padding: 19.5px 81px;
+  border-radius: 10px;
+}
+.btn100 span{
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+}
+.user-input:hover{
+  background-color: #263238;
+}
+.btn100:hover{
+  background-color: #e5e5e5;
+}
+.fbox div {
+  background-color: #263238;
+  width: 100%;
+  height: 2px;
+}
+.fbox div:hover{
+  background-color: #8f95a5;
+}
+.fbox ul{
+  
+  display: flex;
+  justify-content: space-between;
+}
+.fbox-li{
+   padding-top: 31px;
+}
+.fbox-li2{
+  padding-top: 55px;
+}
+.fbox-li2 a{
+  font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+color: #546269;
+}
